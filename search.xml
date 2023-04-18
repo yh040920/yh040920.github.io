@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>经典算法</title>
+      <link href="/post/52bf2cec.html"/>
+      <url>/post/52bf2cec.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><p>&emsp;&emsp;冒泡排序是一种简单的排序算法。它重复地走访过要排序的数列,一次比较两个元素,如果它们的顺序错误就把它们交换过来。走访数列的工作是重复地进行直到没有再需要交换,也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢”浮”到数列的顶端。  </p><p>&emsp;&emsp;基本的冒泡排序实现：  </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">bubble_sort</span>(<span class="params">nums</span>):</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 我们设置 swapped 为 True 以确保循环在至少发生一次交换时继续运行</span></span><br><span class="line">    swapped = <span class="literal">True</span>  </span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 我们要遍历数组的全部元素,因此 outer loop 从 0 到 数组的长度 </span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):  </span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 如果没有发生任何交换,那么数组已经排序完成,我们可以停止循环</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> swapped:  </span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 我们将 swapped 设置为 False,假定本次循环不会发生交换         </span></span><br><span class="line">        swapped = <span class="literal">False</span>  </span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 现在我们以Similar的方式在当前的未排序区间内进行遍历 </span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(nums) - i - <span class="number">1</span>):  </span><br><span class="line">        </span><br><span class="line">            <span class="comment"># 如果前面的元素大于后面的元素,我们交换它们</span></span><br><span class="line">            <span class="keyword">if</span> nums[j] &gt; nums[j + <span class="number">1</span>]:  </span><br><span class="line">                nums[j], nums[j + <span class="number">1</span>] = nums[j + <span class="number">1</span>], nums[j] </span><br><span class="line">                </span><br><span class="line">                <span class="comment"># 我们发生了交换,所以设置 swapped 为 True 以确保我们在下次循环中继续遍历</span></span><br><span class="line">                swapped = <span class="literal">True</span>  </span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试数组                </span></span><br><span class="line">nums = [<span class="number">5</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">4</span>] </span><br><span class="line">bubble_sort(nums) </span><br><span class="line"><span class="built_in">print</span>(nums) <span class="comment"># [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure><p>&emsp;&emsp;时间复杂度 O(n^2), 空间复杂度 O(1)。冒泡排序的优点是简单,稳定,空间效率高。缺点是时间效率不高,并不实用。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Claude回复</title>
       <link href="/post/24531ddb.html"/>
       <url>/post/24531ddb.html</url>
